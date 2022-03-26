@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #131D27;
+    background-size: cover;
+
+}
+
+ul {
+    list-style: none;
+    justify-content: space-evenly;
+}
+li {
+    display: inline;
+    padding: 50px;
+    font-size: 30px ;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+    color: whitesmoke;
+}
+p {
+    font-weight: bold;
+    font-style: italic; 
+    font-size: 2rem;
+}
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 1px;
+    padding: 10px;
+    margin: 30px;
+   background-color: black;
+}
+.headernav img {
+    height: auto;
+    width: 10%;
+}
+
+.imagenMain {
+    height: 800px;
+    width: 800px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: 	transparent;
+    text-align: left;
+    margin: 20px;
+    }
+    .imagenMain img{
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+    
+    }
+.guitarras {
+height: 250px; 
+width: 200px;
+overflow: hidden;
+text-align: center;
+font-size: 1rem;
+border: 1px solid black;
+border-radius: 5px ;
+color: whitesmoke;
+background-color: black;
+margin: 100px;
+
+}
+.guitarras img {
+    width: 75%;
+    padding: 10px;
+}
+
+.footer
+{
+font-size: 1.5rem;
+background-color: black;
+color: whitesmoke;
+}
+.ubi {
+    margin: 100px;
+    text-align: center;
+ }
+
+ .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.aboutus {
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 50px;
+    background-color: 	#FFF0C9;
+    width: 95%;
+}
+    .redes {
+        
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: 	#FFF0C9;
+        width: 300px;
+        height: 300px;
+        
+       
+}
+
+.contactocontainer {
+   
+    display:inline;
+    text-align: center;
+    flex-wrap: wrap;
+}   
+
+.contacto {
+    
+    padding: 10px;
+    margin: 10px;
+}
+.contactoo {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 300px;
+
+}
+.chayanne
+{
+    background-color: aqua;
+}
+.rickymartin
+{
+    background-color: blue;
+}
+@media screen and (max-width:768px)/* es importante que este al final del código*/
+ {
+
+    .chayanne { background-color: aqua;
+                    
+    }
+
+
+}
