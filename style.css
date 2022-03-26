@@ -73,7 +73,10 @@ p {
         padding: 5px;
         height: 100%;
         width: 100%;
-    
+        transition: all 0.2s linear;
+    }
+    .imagenMain img:hover {
+        transform: scale(1.05,1.05);
     }
     
 .guitarras {
@@ -209,8 +212,33 @@ transform: scale(1,1.2);
 
 @media screen and (max-width:768px)/* es importante que este al final del código*/
  {
-
-    
-
+    body {
+        font-size: 5px;
+    }
+    ul {
+        justify-content: space-evenly;
+    }
+    li {
+        display: flex;
+        
+        font-size: 10px ;
+    }
+    .headernav {
+        display: inline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: transparent;
+       
+      
+    }
+    .headernav img {
+        height: auto;
+        width: 200px;
+        padding-left: 100px;
+        background-color: transparent;
+        
+        
+    }
 
 }
