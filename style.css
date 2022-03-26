@@ -12,7 +12,10 @@ body {
     font-size: 12px;
     background-color: #131D27;
     background-size: cover;
-
+    animation-name: movimiento;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 ul {
@@ -53,7 +56,9 @@ p {
 .headernav img {
     height: auto;
     width: 10%;
+    
 }
+
 
 .imagenMain {
     height: 800px;
@@ -70,6 +75,7 @@ p {
         width: 100%;
     
     }
+    
 .guitarras {
 height: 250px; 
 width: 200px;
@@ -81,8 +87,15 @@ border-radius: 5px ;
 color: whitesmoke;
 background-color: black;
 margin: 100px;
+transition: all 0.2s linear;
+}
+.guitarras:hover {
+box-shadow: 1px 1px 3px 1px grey;
+transform: scale(1.2,1.2);
 
 }
+
+
 .guitarras img {
     width: 75%;
     padding: 10px;
@@ -97,6 +110,10 @@ color: whitesmoke;
 .ubi {
     margin: 100px;
     text-align: center;
+    transition: all 0.3s linear;
+ }
+ .ubi:hover {
+     transform: scale(1.2,1.2);
  }
 
  .container{
@@ -112,6 +129,10 @@ color: whitesmoke;
     margin: 50px;
     background-color: 	#FFF0C9;
     width: 95%;
+    transition: all 0.1s linear;
+}
+.aboutus:hover {
+    transform: scale(1,1.2);
 }
     .redes {
         
@@ -122,10 +143,13 @@ color: whitesmoke;
         background-color: 	#FFF0C9;
         width: 300px;
         height: 300px;
-        
+        transition: all 0.2s linear;
        
 }
+.redes:hover{
+transform: scale(1.2, 1.2)
 
+}
 .contactocontainer {
    
     display:inline;
@@ -151,20 +175,42 @@ color: whitesmoke;
     grid-auto-rows: 300px;
 
 }
-.chayanne
-{
-    background-color: aqua;
+
+
+footer:hover{
+
+transform: scale(1,1.2);
+
+
 }
-.rickymartin
-{
-    background-color: blue;
+
+@keyframes movimiento{
+    0% { 
+        background-color: #131D27 ;
+    }  
+    25% {
+        background-color: black;
+    } 
+    50% {
+        background-color: #131D27;
+    }
+    75% {
+            background-color: black;
+    }
+    100% {
+        background-color:  #131D27;
+    }
+
 }
+
+
+
+
+
 @media screen and (max-width:768px)/* es importante que este al final del código*/
  {
 
-    .chayanne { background-color: aqua;
-                    
-    }
+    
 
 
 }
