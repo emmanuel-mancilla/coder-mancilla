@@ -73,7 +73,7 @@ p {
         padding: 5px;
         height: 100%;
         width: 100%;
-        transition: 0.2s linear;
+        transition: all 0.2s linear;
     }
     .imagenMain img:hover {
         transform: scale(1.05,1.05);
@@ -209,8 +209,9 @@ transform: scale(1,1.2);
 
 
 
-    @media screen and (max-width:768px)
-    {body {
+@media screen and (max-width:768px)
+{
+    body {
         font-size: 5px;
     }
     ul {
